@@ -1,7 +1,13 @@
 package br.ufjf.dcc193.henriquecardoso.quest;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Missao {
+    @Autowired
     private Heroi heroi;
+
     public Missao(Heroi heroi){
         System.out.println("O Rei criou uma nova missão!");
         setHeroi(heroi);
