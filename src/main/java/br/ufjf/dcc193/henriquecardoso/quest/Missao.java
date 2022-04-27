@@ -1,10 +1,10 @@
 package br.ufjf.dcc193.henriquecardoso.quest;
 
 public class Missao {
-    private Cavaleiro cavaleiro;
-    public Missao(Cavaleiro cavaleiro){
+    private Heroi heroi;
+    public Missao(Heroi heroi){
         System.out.println("O Rei criou uma nova missão!");
-        setCavaleiro(cavaleiro);
+        setHeroi(heroi);
 
     }
     public Missao(){
@@ -16,14 +16,14 @@ public class Missao {
         System.out.println("A missão teve início");
     }
     public void concluir(){
-        cavaleiro.agir();
+        heroi.agir();
         System.out.println("A missão chegou ao fim");
     }
-    public Cavaleiro getCavaleiro() {
-        return cavaleiro;
+    public Heroi getHeroi() {
+        return heroi;
     }
-    public void setCavaleiro(Cavaleiro cavaleiro) {
-        this.cavaleiro = cavaleiro;
+    public void setHeroi(Heroi heroi) {
+        this.heroi = heroi;
     }
 
 }

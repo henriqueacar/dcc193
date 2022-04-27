@@ -10,11 +10,11 @@ public class QuestApplication {
 		SpringApplication.run(QuestApplication.class, args);
 		System.out.println("Hora da Aventura");
 
-		Cavaleiro cl = new Cavaleiro();
+		Heroi h1 = new Cavaleiro();
 		
 		Missao m1 = new Missao();
 		m1.iniciar();
-		m1.setCavaleiro(cl);
+		m1.setHeroi(h1);
 		m1.concluir();
 	}
 
